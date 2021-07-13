@@ -1,0 +1,1 @@
+intersect(celllijst1, cellijst2) neemt de doorsnede van 2 cell arrays
