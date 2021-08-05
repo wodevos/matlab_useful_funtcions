@@ -1,4 +1,5 @@
 function replaced_subject=replaceSubject(name, new_subject)
+%
 
      indices=strfind(name, 'sub');
      strlength=length(new_subject);

@@ -92,7 +92,9 @@ while k ~= 0
         %If the current fieldname is a structure, find its child
         %fieldnames, add to NAMES if not at specified depth (g = 0). Add to
         %fndstruct (list of structures). 
-        if isstruct(eval(NAMES{i})) == 1
+        disp(eval(NAMES{i}));
+        if (isstruct(eval(NAMES{i}))>0) & ~isempty(eval(NAMES{i}))
+            
             if g ~= 1
                 fndtemp2 = fieldnames(eval(NAMES{i})) ;
                 fndtemp2 = cellfun(@(x) strcat(sprintf('%s.'            ...
