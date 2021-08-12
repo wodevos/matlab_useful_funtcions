@@ -1,15 +1,11 @@
-TODO:
+TODO
 **replaceSubjectFields**
 in a struct: replace subject in all fields
 
 ** find inconsistencies**
 get a list of all subjects who are present and check if the order
-
-**getAllSubjects**
-
-
-
-
+-> hiervoor kunnen we contains(subject,filelist) doen en dan aan de hand van 
+getSubject het subject van de ene rij matchen, en dan bvb find functie
 
 
 
@@ -62,3 +58,33 @@ in a struct: replace subject in all fields
 **replaceSubjectFields**
 % replaces in all fields (character arrays or cell arrays the subject ID)
 ->also helper functions for the cell and char arrays
+------------------------------------------------------------------------------
+**existsGunzipped**
+% checks if a file exists in gunzipped version
+% input: path to the file that may exist in a gunzipped format
+% output: weather this is the case or not
+------------------------------------------------------------------------------
+**getUnzippedName**
+% INPUT: name of the file that is zipped '.gz' (character array)
+% OUTPUT: the same name but without the .gz extension
+----------------------------------------------------------------------
+** gunzipAll**
+% gunzips all files
+%INPUT: cell array of filenames (character arrays)
+-----------------------------------------------------------------------------
+**makeAllUnzipped(files)**
+% this function makes sure all files are unzipped; so it checks if it is
+% the case and if it is not, does the unzipping (and returns the same
+% filelist , but then with only unzipped files)
+
+% INPUT: the list of files of which we want to check if it exists in
+% gunzipped version
+% output: the name of all the unzipped files (some of them may have been
+% newly created
+---------------------------------------------------------------------
+**getAllSubjects**
+% gets the filenames of all subjects 
+
+%INPUT: cell array with pahts to files
+%OUTPUT: cell array with the names of the subjects
+---------------------------------------------------------------------------
