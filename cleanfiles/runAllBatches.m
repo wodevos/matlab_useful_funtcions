@@ -1,11 +1,8 @@
 function runAllBatches(batches)
 % runs al the matlabbatches
 
-	for i=1:length(batches)
-        
-        spm_jobman('run', matlabbatches)    
-        
-        
+	parfor i=1:length(batches)
+        spm_jobman('run', batches{i})
     end
 
 
