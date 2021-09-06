@@ -1,0 +1,12 @@
+function checkInconsistency(filesA, filesB)
+
+
+     subjectsA=getAllSubjects(filesA)
+     subjectsB=getAllSubjects(filesB)
+     
+     pAB=setDiff(
+
+
+
+
+end
